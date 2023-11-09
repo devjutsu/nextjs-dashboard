@@ -3,6 +3,7 @@ import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
 
 import Link from 'next/link';
+import { SignIn } from './ui/authButtons';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -19,12 +20,9 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span>
-          </Link>
+          
+          <SignIn />
+          
           <Link
             href="/dashboard"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
